@@ -49,7 +49,7 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  if (parseInt(cardNumber,10) === 0) {
+  if (cardNumber == null) {
     return "Sorry, we don't have a credit card on file for you."
   } 
   var all = total()
